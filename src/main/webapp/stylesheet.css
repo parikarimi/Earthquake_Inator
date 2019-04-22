@@ -1,0 +1,335 @@
+/*CUSTOM FONTS*/
+
+@font-face {
+    font-family: bebas;
+    src: url(fonts/BEBAS.ttf);
+}
+@font-face {
+    font-family: gobold;
+    src: url(fonts/Gobold_Blocky_Italic.otf);
+}
+/**/
+
+body {
+    font-family: 'bebas', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/earthblur.jpg);
+}
+main {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+h2 {
+    margin: 0px;
+    color: #f7f7f2;
+    text-align: center;
+    padding: 5px;
+    cursor: default;
+}
+h1 {
+    color: rgb(24, 24, 63);
+    float: left;
+    padding-left: 10px;
+    font-size: 2em;
+    cursor: default;
+}
+.header {
+    float: left;
+    z-index: 1;
+    padding: 14px 16px;
+}
+/*HOME PAGE*/
+
+.home {
+    background-image: url(images/earth.jpg);
+}
+.content {
+    position: absolute;
+    top: 25%;
+    background: rgba(121, 121, 121, 0.3);
+    border-radius: 20px;
+    color: #ffffea;
+    left: 25%;
+    padding: 20px;
+    font-size: 2em;
+    height: auto;
+    width: 50%;
+}
+#quote {
+    font-family: 'gobold', Arial, sans-serif;
+    font-size: 3em;
+}
+button {
+    height: 25px;
+    position: relative;
+    background-color: rgb(153, 211, 173);
+}
+/*MAP*/
+
+#map-title {
+    font-family: 'bebas', Arial, sans-serif;
+    font-size: 2em;
+    color: rgb(24, 24, 63);
+    word-spacing: 10px;
+    padding-top: 0px;
+}
+#layer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    z-index: 1;
+}
+#map {
+    position: absolute;
+    top: 30%;
+    height: 90%;
+    bottom: 20%;
+    width: 100%;
+    margin: auto;
+}
+#container {
+    position: absolute;
+    background-color: #f7f7f2;
+    width: 85%;
+    height: 75%;
+    left: 7%;
+    top: 20%;
+    margin-bottom: 50px;
+}
+/**/
+
+/*FOOTER*/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f7f7f2;
+    color: rgb(24, 24, 63);
+    text-align: left;
+    margin: 0px;
+    padding-top: 5px;
+    cursor: default;
+}
+#copyright {
+    padding-right: 10px;
+    padding-bottom: 5px;
+    margin: 0px;
+    float: right;
+}
+.company {
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin: 0px;
+    float: left;
+}
+/**/
+
+/* ALERT FORM */
+
+input {
+    display: block;
+    margin-bottom: 15px;
+    height: 20px;
+}
+label {
+    display: block;
+}
+form {
+    text-align: left;
+    position: relative;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    margin: 5px;
+    outline: 0;
+    padding: 10px;
+    width: 100%;
+    color: #ffffea;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
+    display: inline;
+}
+.alertForm {
+    position: absolute;
+    top: 25%;
+    background: rgba(121, 121, 121, 0.3);
+    border-radius: 20px;
+    color: #ffffea;
+    left: 25%;
+    padding: 20px;
+    font-size: 1.3em;
+    height: auto;
+    width: 50%;
+    word-spacing: 10px;
+    margin-bottom: 10%;
+}
+.submit {
+    background-color: #3477ba;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #ffffea;
+    font-family: 'bebas', Arial, sans-serif;
+    font-size: 15px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    height: 30px;
+    display: block;
+    margin-top: 15px;
+    word-spacing: 5px;
+}
+#submit:hover {
+    background-color: #103152;
+}
+/*ABOUT PAGE*/
+
+.about {
+    margin-bottom: 10%;
+}
+.about > p {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+p a {
+    text-decoration: none;
+    color: #ffffea;
+}
+#errorMessage {
+    color: #f7f7f2;
+    word-spacing: 10px;
+    text-align: center;
+    font-size: 2em;
+    cursor: default;
+}
+/*DROPDOWN MENU FOR MOBILE*/
+
+@media(max-width: 615px) {
+    .dropbtn, button {
+        background-color: #f7f7f2;
+        color: #30302f;
+        padding: 5px;
+        border: none;
+        cursor: pointer;
+        margin: 10px;
+        margin-top: 15px;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        float: right;
+        margin-right: 25px;
+    }
+    .dropbtn:focus {
+        color: black;
+        box-shadow: 1px 1px 5px 1px #888888;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f7f7f2;
+        z-index: 1;
+        min-height: 100px;
+        min-width: 50px;
+        border-left: solid #30302f 1.4px;
+        border-right: solid #30302f 1.4px;
+    }
+    .dropdown-content ul {
+        list-style-type: none;
+        padding: 0;
+        margin: auto;
+    }
+    .dropdown-content a {
+        background-color: #f7f7f2;
+        color: rgb(24, 24, 63);
+        text-decoration: none;
+        padding: 5px;
+        display: block;
+        font-size: 20px;
+        font-family: 'bebas', Arial, sans-serif;
+        border-bottom: solid #30302f 1.4px;
+        letter-spacing: 2px;
+    }
+    .dropdown-content li a:hover {
+        color: #f7f7f2;
+        background-color: rgb(24, 24, 63);
+        ;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    li:first-child {
+        border-top: solid #30302f 1.4px;
+    }
+    li .active {
+        color: #f7f7f2;
+        background-color: #30302f;
+    }
+    .nav {
+        float: right;
+        width: 100%;
+        background-color: #f7f7f2;
+    }
+}
+@media(min-width: 615px) {
+    .dropbtn {
+        display: none;
+    }
+}
+button {
+    font-size: 25px;
+}
+div.dropdown {
+    padding: 0 25px 25px 5px;
+}
+/*NAVIGATION*/
+
+@media (min-width: 615px) {
+    ul {
+        list-style-type: none;
+        overflow: hidden;
+        float: right;
+    }
+    li {
+        float: left;
+    }
+    li a {
+        display: block;
+        color: rgb(24, 24, 63);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        border-radius: 10px;
+        font-size: 1.2em;
+    }
+    li a:hover {
+        background-color: #dfdfdf;
+        border-radius: 10px;
+    }
+    .nav {
+        float: right;
+        width: 100%;
+        background-color: #f7f7f2;
+    }
+}
+@media only screen and (max-width: 700px) {
+    h1 {
+        font-size: 25px;
+    }
+    .content {
+        font-size: 1.2em;
+    }
+}
